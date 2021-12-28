@@ -6,71 +6,118 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-  <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
-
-  <article id="carousel" x-data="slider" class="relative w-full flex flex-shrink-0 overflow-hidden shadow-2xl">
-      <div class="rounded-full bg-gray-600 text-white absolute top-5 right-5 text-sm px-2 text-center z-10">
-          <span x-text="currentIndex"></span>/
-          <span x-text="images.length"></span>
-      </div>
-  
-      <template x-for="(image, index) in images">
-          <figure class="h-96" x-show="currentIndex == index + 1" x-transition:enter="transition transform duration-300"
-          >
-          <img :src="image" alt="Image" class="absolute inset-0 z-10 h-full w-full object-cover opacity-70" />
+  <head>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+      <script>
+        var cont=0;
+    function loopSlider(){
+      var xx= setInterval(function(){
+            switch(cont)
+            {
+            case 0:{
+                $("#slider-1").fadeOut(400);
+                $("#slider-2").delay(400).fadeIn(400);
+                $("#sButton1").removeClass("bg-purple-800");
+                $("#sButton2").addClass("bg-purple-800");
+            cont=1;
+            
+            break;
+            }
+            case 1:
+            {
+            
+                $("#slider-2").fadeOut(400);
+                $("#slider-1").delay(400).fadeIn(400);
+                $("#sButton2").removeClass("bg-purple-800");
+                $("#sButton1").addClass("bg-purple-800");
+               
+            cont=0;
+            
+            break;
+            }
+            
+            
+            }},8000);
+    
+    }
+    
+    function reinitLoop(time){
+    clearInterval(xx);
+    setTimeout(loopSlider(),time);
+    }
+    
+    
+    
+    function sliderButton1(){
+    
+        $("#slider-2").fadeOut(400);
+        $("#slider-1").delay(400).fadeIn(400);
+        $("#sButton2").removeClass("bg-purple-800");
+        $("#sButton1").addClass("bg-purple-800");
+        reinitLoop(4000);
+        cont=0
         
-          </figure>
-      </template>
-  
-      <button @click="back()"
-          class="absolute left-14 top-1/2 -translate-y-1/2 w-11 h-11 flex justify-center items-center rounded-full shadow-md z-10 bg-gray-100 hover:bg-gray-200">
-          <svg class=" w-8 h-8 font-bold transition duration-500 ease-in-out transform motion-reduce:transform-none text-gray-500 hover:text-gray-600 hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7">
-              </path>
-          </svg>
-      </button>
-  
-      <button @click="next()"
-      class="absolute right-14 top-1/2 translate-y-1/2 w-11 h-11 flex justify-center items-center rounded-full shadow-md z-10 bg-gray-100 hover:bg-gray-200">
-          <svg class=" w-8 h-8 font-bold transition duration-500 ease-in-out transform motion-reduce:transform-none text-gray-500 hover:text-gray-600 hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path>
-          </svg>
-      </button>
-  </article>
-  
-  <script>
-      document.addEventListener('alpine:init', () => {
-          Alpine.data('slider', () => ({
-              currentIndex: 1,
-              images: [
-                
-                  '/imagenes/1.jpg',
-                  '/imagenes/2.jpg',
-                  'https://source.unsplash.com/1600x900/?dog',
-                  'https://source.unsplash.com/1600x900/?lego',
-                  'https://source.unsplash.com/1600x900/?textures&patterns'
-              ],
-              back() {
-                  if (this.currentIndex > 1) {
-                      this.currentIndex = this.currentIndex - 1;
-                  }
-              },
-              next() {
-                  if (this.currentIndex < this.images.length) {
-                      this.currentIndex = this.currentIndex + 1;
-                  } else if (this.currentIndex <= this.images.length){
-                      this.currentIndex = this.images.length - this.currentIndex + 1
-                  }
-              },
-          }))
-      })
-
-      $('.carousel').carousel({
-    interval: 6000
-}); 
-  </script>
-  
+        }
+        
+        function sliderButton2(){
+        $("#slider-1").fadeOut(400);
+        $("#slider-2").delay(400).fadeIn(400);
+        $("#sButton1").removeClass("bg-purple-800");
+        $("#sButton2").addClass("bg-purple-800");
+        reinitLoop(4000);
+        cont=1
+        
+        }
+    
+        $(window).ready(function(){
+            $("#slider-2").hide();
+            $("#sButton1").addClass("bg-purple-800");
+            
+    
+            loopSlider();
+         
+            
+        
+        
+        
+        
+        });
+    
+      
+      </script>
+    </head>
+    
+    <body>
+      <div class="sliderAx h-auto">
+          <div id="slider-1" class="container mx-auto">
+            <div class="bg-cover bg-center  h-auto text-white py-24 px-10 object-fill" style="background-image: url(https://images.unsplash.com/photo-1544427920-c49ccfb85579?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1422&q=80)">
+           <div class="md:w-1/2">
+            <p class="font-bold text-sm uppercase">Services</p>
+            <p class="text-3xl font-bold">Hello world</p>
+            <p class="text-2xl mb-10 leading-none">Carousel with TailwindCSS and jQuery</p>
+            <a href="#" class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Contact us</a>
+            </div>  
+        </div> <!-- container -->
+          <br>
+          </div>
+    
+          <div id="slider-2" class="container mx-auto">
+            <div class="bg-cover bg-top  h-auto text-white py-24 px-10 object-fill" style="background-image: url(https://images.unsplash.com/photo-1544144433-d50aff500b91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)">
+           
+      <p class="font-bold text-sm uppercase">Services</p>
+            <p class="text-3xl font-bold">Hello world</p>
+            <p class="text-2xl mb-10 leading-none">Carousel with TailwindCSS and jQuery</p>
+            <a href="#" class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Contact us</a>
+             
+        </div> <!-- container -->
+          <br>
+          </div>
+        </div>
+     <div  class="flex justify-between w-12 mx-auto pb-2">
+            <button id="sButton1" onclick="sliderButton1()" class="bg-purple-400 rounded-full w-4 pb-2 " ></button>
+        <button id="sButton2" onclick="sliderButton2() " class="bg-purple-400 rounded-full w-4 p-2"></button>
+      </div>
+    
+    </body>
 </body>
 </html>
