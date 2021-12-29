@@ -12,6 +12,24 @@ body {
     overflow: hidden;
 }
 
+div[id="1"]{
+color: #ffff;
+
+}
+div[id="2"]{
+color: rgb(0, 0, 0);
+
+}
+div[id="3"]{
+color: #ffff;
+    
+    
+}
+div[id="4"]{
+color: #ffff;
+    
+}
+
 .slider-one,
 .slider-two,
 .slider-three,
@@ -39,7 +57,7 @@ body {
             position: absolute;
             top: 40%;
             left: 5%;
-            color: #ffffff;
+            
             width: 600px;
             text-transform: capitalize;
             animation: text-up 12s linear infinite;
