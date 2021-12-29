@@ -47,8 +47,8 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    -webkit-animation: zoom-out 4s linear infinite;
-            animation: zoom-out 4s linear infinite;
+    -webkit-animation: zoom-out 3s linear infinite;
+            animation: zoom-out 3s linear infinite;
   }
   
   .slider-one .slider-one-image .slider-text ,
@@ -71,7 +71,7 @@
     top: 40%;
     left: 5%;
     color: #ffffff;
-    width: 700px;
+    width: 600px;
     text-transform: capitalize;
     -webkit-animation: text-up 12s linear infinite;
             animation: text-up 12s linear infinite;
