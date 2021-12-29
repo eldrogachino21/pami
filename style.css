@@ -145,8 +145,8 @@
   }
   
   .slider-three .slider-three-image .slider-text {
-    -webkit-animation-delay: 6s;
-            animation-delay: 6s;
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
   }
   
   .slider-four {
@@ -159,8 +159,8 @@
   }
   
   .slider-four .slider-four-image .slider-text {
-    -webkit-animation-delay: 9s;
-            animation-delay: 9s;
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
   }
   
   @-webkit-keyframes text-up {
