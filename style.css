@@ -70,7 +70,7 @@
     position: absolute;
     top: 40%;
     left: 5%;
-    color: #ffffff;
+    color: rgba(0, 0, 0, 0.933);
     width: 600px;
     text-transform: capitalize;
     -webkit-animation: text-up 12s linear infinite;
