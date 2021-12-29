@@ -47,8 +47,8 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    -webkit-animation: zoom-out 3s linear infinite;
-            animation: zoom-out 3s linear infinite;
+    -webkit-animation: zoom-out 4s linear infinite;
+            animation: zoom-out 4s linear infinite;
   }
   
   .slider-one .slider-one-image .slider-text ,
@@ -131,8 +131,8 @@
   }
   
   .slider-two .slider-two-image .slider-text {
-    -webkit-animation-delay: 12s;
-            animation-delay: 12s;
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
   }
   
   .slider-three {
@@ -145,8 +145,8 @@
   }
   
   .slider-three .slider-three-image .slider-text {
-    -webkit-animation-delay: 12s;
-            animation-delay: 12s;
+    -webkit-animation-delay: 6s;
+            animation-delay: 6s;
   }
   
   .slider-four {
@@ -159,8 +159,8 @@
   }
   
   .slider-four .slider-four-image .slider-text {
-    -webkit-animation-delay: 12s;
-            animation-delay: 12s;
+    -webkit-animation-delay: 9s;
+            animation-delay: 9s;
   }
   
   @-webkit-keyframes text-up {
