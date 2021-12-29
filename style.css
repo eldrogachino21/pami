@@ -50,7 +50,23 @@
     -webkit-animation: zoom-out 3s linear infinite;
             animation: zoom-out 3s linear infinite;
   }
-  
+  div[id="1"]{
+    color: #ffff;
+    
+    }
+    div[id="2"]{
+       color : rgb(0, 0, 0);
+    
+    }
+    div[id="3"]{
+    color: #ffff;
+        
+        
+    }
+    div[id="4"]{
+    color: #ffff;
+        
+    }
   .slider-one .slider-one-image .slider-text,
   .slider-one .slider-two-image .slider-text,
   .slider-one .slider-three-image .slider-text,
