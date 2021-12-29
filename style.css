@@ -47,8 +47,8 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    -webkit-animation: zoom-out 3s linear infinite;
-            animation: zoom-out 3s linear infinite;
+    -webkit-animation: zoom-out 4s linear infinite;
+            animation: zoom-out 4s linear infinite;
   }
   
   .slider-one .slider-one-image .slider-text ,
@@ -340,8 +340,3 @@
       visibility: visible;
     }
   }
-  © 2021 GitHub, Inc.
-  Terms
-  Privacy
-  Security
-  
