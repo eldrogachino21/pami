@@ -59,29 +59,7 @@ body {
 
         }
 
-        .div [id=1] {
-            position: absolute;
-            top: 40%;
-            left: 5%;
-            color: #0000;
-            width: 600px;
-            text-transform: capitalize;
-            animation: text-up 12s linear infinite;
-            transform: translateY(100px);
-            animation-delay: 0s;
-
-            h1 {
-                font-size: 2.5rem;
-                margin-bottom: 20px;
-            }
-
-            p {
-                font-size: 20px;
-                line-height: 28px;
-
-            }
-
-        }
+        
     }
 }
 
