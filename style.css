@@ -113,7 +113,7 @@
   .slider-four .slider-two-image .slider-text h1,
   .slider-four .slider-three-image .slider-text h1,
   .slider-four .slider-four-image .slider-text h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     margin-bottom: 20px;
   }
   
@@ -133,8 +133,8 @@
   .slider-four .slider-two-image .slider-text p,
   .slider-four .slider-three-image .slider-text p,
   .slider-four .slider-four-image .slider-text p {
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 44px;
+    line-height: 27px;
   }
   
   .slider-two {
