@@ -21,7 +21,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    animation: slider-one 12s linear infinite;
+    animation: slider-one 15s linear infinite;
 
     .slider-one-image,
     .slider-two-image,
@@ -62,7 +62,7 @@ body {
 }
 
 .slider-two {
-    animation: slider-two 12s linear infinite;
+    animation: slider-two 15s linear infinite;
     background-size: cover;
     background-repeat: no-repeat;
     .slider-two-image {
@@ -75,7 +75,7 @@ body {
 }
 
 .slider-three {
-    animation: slider-three 12s linear infinite;
+    animation: slider-three 15s linear infinite;
     background-size: cover;
     background-repeat: no-repeat;
     .slider-three-image {
@@ -88,7 +88,7 @@ body {
 }
 
 .slider-four {
-    animation: slider-four 12s linear infinite;
+    animation: slider-four 15s linear infinite;
     background-size: cover;
     background-repeat: no-repeat;
     .slider-four-image {
