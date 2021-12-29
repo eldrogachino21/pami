@@ -122,6 +122,8 @@
   }
   
   .slider-two {
+    background-size: cover;
+    background-repeat: no-repeat;
     -webkit-animation: slider-two 12s linear infinite;
             animation: slider-two 12s linear infinite;
 
@@ -134,11 +136,13 @@
   .slider-two .slider-two-image .slider-text {
     -webkit-animation-delay: 3s;
             animation-delay: 3s;
-            background-size: cover;
-            background-repeat: no-repeat;
+            
   }
   
   .slider-three {
+
+    background-size: cover;
+    background-repeat: no-repeat;
     -webkit-animation: slider-three 12s linear infinite;
             animation: slider-three 12s linear infinite;
   }
@@ -150,11 +154,11 @@
   .slider-three .slider-three-image .slider-text {
     -webkit-animation-delay: 6s;
             animation-delay: 6s;
-            background-size: cover;
-            background-repeat: no-repeat;
   }
   
   .slider-four {
+    background-size: cover;
+    background-repeat: no-repeat;
     -webkit-animation: slider-four 12s linear infinite;
             animation: slider-four 12s linear infinite;
   }
@@ -166,8 +170,6 @@
   .slider-four .slider-four-image .slider-text {
     -webkit-animation-delay: 9s;
             animation-delay: 9s;
-            background-size: cover;
-            background-repeat: no-repeat;
   }
   
   @-webkit-keyframes text-up {
