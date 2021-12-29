@@ -63,7 +63,8 @@ body {
 
 .slider-two {
     animation: slider-two 12s linear infinite;
-
+    background-size: cover;
+    background-repeat: no-repeat;
     .slider-two-image {
         background-image: url('imagenes/2.jpg');
 
@@ -75,7 +76,8 @@ body {
 
 .slider-three {
     animation: slider-three 12s linear infinite;
-
+    background-size: cover;
+    background-repeat: no-repeat;
     .slider-three-image {
         background-image: url('imagenes/3.jpg');
 
@@ -87,7 +89,8 @@ body {
 
 .slider-four {
     animation: slider-four 12s linear infinite;
-
+    background-size: cover;
+    background-repeat: no-repeat;
     .slider-four-image {
         background-image: url('imagenes/7.jpg');
 
