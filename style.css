@@ -131,8 +131,8 @@
   }
   
   .slider-two .slider-two-image .slider-text {
-    -webkit-animation-delay: 0s;
-            animation-delay: 0s;
+    -webkit-animation-delay: 12s;
+            animation-delay: 12s;
   }
   
   .slider-three {
@@ -145,8 +145,8 @@
   }
   
   .slider-three .slider-three-image .slider-text {
-    -webkit-animation-delay: 0s;
-            animation-delay: 0s;
+    -webkit-animation-delay: 12s;
+            animation-delay: 12s;
   }
   
   .slider-four {
@@ -159,8 +159,8 @@
   }
   
   .slider-four .slider-four-image .slider-text {
-    -webkit-animation-delay: 0s;
-            animation-delay: 0s;
+    -webkit-animation-delay: 12s;
+            animation-delay: 12s;
   }
   
   @-webkit-keyframes text-up {
