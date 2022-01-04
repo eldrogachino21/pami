@@ -61,3 +61,16 @@ section:nth-child(3){
 section:nth-child(4){
     background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
 }
+
+@media screen and (max-width:1000px){
+    section{
+        flex-direction: column-reverse;
+         /* justify-content: center; */
+    }
+    section > img{
+        height: 40%;
+    }
+    .contenedor-texto{
+        text-align: center;
+    }
+}
