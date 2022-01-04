@@ -74,3 +74,9 @@ section:nth-child(4){
         text-align: center;
     }
 }
+
+@media screen and (max-width:600px){
+    section > img{
+        height: 25%;
+    }
+}
