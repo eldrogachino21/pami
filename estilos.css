@@ -1,0 +1,33 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+
+    font-family: 'Ubuntu', sans-serif;
+}
+
+section
+{
+    height: 650px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 40px;
+    align-items: center;
+}
+
+section h2{
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+section p{
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+section img{
+    height: 60%;
+                
+}
