@@ -31,7 +31,18 @@ section img{
     height: 60%;
                 
 }
+section:nth-child(1){
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
 section:nth-child(2){
    
     background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+}
+
+
+section:nth-child(3){
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+section:nth-child(4){
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
 }
